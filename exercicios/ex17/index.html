@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+    
+        /*
+        Medidas absolutas
+        cm,mm,in (polegada),px,pt(ponto),pc(paica)
+        
+        Medidas relativas
+        em (altura do m maiusculo),ex(altura do x minusculo),rem (fonte configurada no body),vw(largura da viewport),vh (altura do viewport),%
+        
+        recomendação do w3c é o px e em, embora o pixel, pode variar um pouco dependendo da tela do seu aparelho, como no caso das telas de retina da apple, que 1px é 1/4 de pixel.
+        
+        16px geralmente é igual a 1em
+        */
+        
+        font-size: 16px;
+
+        /* lighter normal bold bolder ou em numéricas de 100 a 900.As fontes simples, arial, helvetica...só tem um peso fixo, ou são magrinhas ou gordinhas. Usamos então, work sans.
+        */
+
+        }
+
+        h1{
+
+            /* shorthand font- abreviar as declarações
+            -font -style font -weight font -size font- family
+
+            font-family: 'work sans' , sans-serif;
+            font-size: 3em;
+            font-weight; bolder
+            font-style: italic;
+            */
+
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'work-sans'
+        }
+
+  
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, eos. Nam vel, dicta quasi odio dolorem incidunt quidem. Iusto corrupti a ullam, suscipit mollitia in molestias est reiciendis eveniet, dignissimos enim laborum assumenda voluptatibus nobis nostrum quod aliquid? Praesentium error officia et harum alias, laboriosam provident labore. Facere recusandae facilis voluptate nulla, odit sunt neque molestias quam alias eveniet accusantium ad. Beatae eum eius fuga in necessitatibus incidunt possimus, enim excepturi odio, neque doloribus inventore et molestias, fugit maxime illum? Illum aut facilis minima mollitia quisquam nobis cum magnam necessitatibus vel sit. Totam reiciendis eum excepturi vel perspiciatis quidem cupiditate maiores, quas magnam! Excepturi necessitatibus magni nihil qui inventore eveniet beatae debitis quis, unde adipisci sint modi quidem possimus libero, a ipsam temporibus consectetur facere. Repellat, cum maxime. Itaque eveniet temporibus, tempore fugit veritatis a inventore quo ad earum, quidem labore fuga enim blanditiis est vitae sunt commodi numquam, illum nihil? Impedit aliquid officia earum ex asperiores est quos itaque neque, officiis saepe deleniti facilis nesciunt quae, consequatur libero adipisci. Magni, quos cum! Beatae ullam ab, commodi natus ipsa earum quibusdam, id quam sit mollitia voluptatibus suscipit! Possimus ducimus, quaerat eius distinctio quas quo laudantium placeat hic facere voluptates maxime.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia sapiente, in cupiditate saepe molestias sed enim quod, iure ratione dolorem. Reiciendis similique delectus, culpa corrupti est consequuntur aspernatur repellat reprehenderit dolor velit et laborum voluptatem modi recusandae. Nesciunt repellat nam vitae ratione ducimus, libero esse nemo quod similique? Numquam quos non doloremque voluptate ut maxime veniam officiis inventore. Nobis illum quidem iure doloremque laudantium dicta, illo repellendus temporibus consequatur aliquid molestiae quibusdam laborum suscipit totam voluptatum beatae necessitatibus velit ut culpa! Non dolorum quisquam consectetur libero possimus eligendi perspiciatis error quas expedita eius eum sequi sapiente harum, iste commodi?</p>
+</body>
+</html>

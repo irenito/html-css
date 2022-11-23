@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        main{
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+
+            min-width: 320px; /* tamanho min e max que meu conteudo  main vai ocupar na tela, 320 que é a tela do cel antigo e, 800 é um valor considerado ok, para ver em telas grandes */
+            max-width: 800px;
+            margin: auto;
+
+        }
+        /* colocando somente img ocupando 100% da largura da tela, funciona, a imagem aumenta e diminui , tendo apenas uma imagem */
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam quam vero consequuntur, exercitationem, odit aliquid error cupiditate ducimus officia dicta? Voluptates eveniet cupiditate minus rem autem optio consequaturLorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam quam vero consequuntur, exercitationem, odit aliquid error cupiditate ducimus officia dicta? Voluptates eveniet cupiditate minus rem autem optio consequaturLorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam quam vero consequuntur, exercitationem, odit aliquid error cupiditate ducimus officia dicta? Voluptates eveniet cupiditate minus rem autem optio consequatur </p>
+
+       <!-- na tag picture, dá para adicionar imagens de tamanhos diferentes que se adaptam de acordo com o tamanho da tela . No caso abaixo, minha tela se for até 600 de largura, a imagem pequena vai abrir; agora se for maior que 600 , a imagem grande de 800 sera carregada.-->
+         <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati consequuntur blanditiis accusantium veniam commodi voluptate, cum, nemo odio ipsam dignissimos nam esse quia est eligendi eius, quos quibusdam molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam quam vero consequuntur, exercitationem, odit aliquid error cupiditate ducimus officia dicta? Voluptates eveniet cupiditate minus rem autem optio consequaturLorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam quam vero consequuntur, exercitationem, odit aliquid error cupiditate ducimus officia dicta? Voluptates eveniet cupiditate minus rem autem optio consequatur</p>
+    </main>
+</body>
+</html>
