@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh; /* meu body ocupa 100% da viewport*/
             background-color: black; /* qdo aumenta a tela o fundo fica preto (a imagem de fundo nao se repete) é bom para o usuario ter uma cor de fundo, ja que primeiro se carrega o texto, dps as imagens de um site */
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
+            background-position: center center;
+            background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed; /* fixed a imagem de fundo é fixo a tela, a medida que o conteúdo rola; scroll é o padrão, a imagem de fundo rola junto com o conteúdo*/
+            
+            /*shorthand background : color> imagem> position> repeat> size (embora o W3C inclui o size ele não funciona no shorthand) > attachment 
+
+            background: black url(imagens/wallpaper002.jpg) center center repeat-y fixed ;
+            background-size: cover; */
         }
         main{
             background-color: white;
-            width: 400px;
+            width: 500px;
             border: 1px solid red;
             border-radius: 15px;
             padding: 10px;
@@ -30,7 +36,8 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit facere corrupti ipsam inventore iusto quis maiores alias eaque quaerat totam officia dicta quos numquam voluptatum amet quod, ad praesentium.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eos quam itaque reiciendis accusantium possimus odit maxime impedit in officiis nobis iusto, adipisci dolorem architecto natus, animi laborum quod neque.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur tenetur assumenda dolorem vel quisquam reprehenderit facere natus asperiores. Error necessitatibus illo quaerat voluptatibus amet recusandae pariatur quo natus laboriosam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur tenetur assumenda dolorem vel quisquam reprehenderit facere natus asperiores. Error necessitatibus illo quaerat voluptatibus amet recusandae pariatur quo natus laboriosam! <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum minus vero iure at fugit aliquam cum, animi voluptatibus officiis explicabo quam voluptate, quae alias, cupiditate consequuntur eaque. Dolores, adipisci?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo minima molestiae sunt provident adipisci perspiciatis cupiditate reprehenderit at quas. Provident magnam iste officiis accusamus et est numquam eos praesentium ullam?</p>
+        </p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda cumque minus optio corrupti quam magni magnam cum qui, molestiae, temporibus consequatur dolorem labore delectus incidunt quis facere. Velit quod nisi numquam aperiam veritatis perspiciatis, dolor sint pariatur itaque doloribus eligendi nihil perferendis fuga quia. Assumenda veritatis facilis quaerat doloribus enim dicta, maxime totam reprehenderit voluptates quod nemo aliquam architecto. Nostrum sit velit qui cupiditate illo consequatur accusantium possimus omnis non culpa. At totam numquam reiciendis earum suscipit, ad fugiat harum a quos nesciunt ea vel in voluptates saepe illo quam recusandae omnis possimus. Deleniti sed eum provident ipsum, nemo expedita quasi aliquid inventore nobis molestias neque praesentium temporibus sunt aperiam enim tempore beatae voluptatibus doloremque laudantium voluptates asperiores similique. Exercitationem fuga iure fugiat quo. Praesentium id accusamus modi autem, molestias voluptatum provident similique quas quae delectus ex eveniet beatae, nihil nobis quo? Perferendis rem blanditiis sapiente doloribus minus fugiat adipisci accusantium eligendi aperiam laboriosam, magnam necessitatibus soluta cupiditate, tenetur provident voluptas eius odit. Alias repudiandae nihil nam debitis saepe porro laboriosam facere sed adipisci, maxime natus aperiam incidunt totam perferendis eos odio, iste rerum rem quasi! A atque neque asperiores vero commodi ipsa facilis doloribus voluptatibus, similique eveniet nobis vel blanditiis mollitia provident ratione cumque deserunt, saepe corrupti quod amet dolores. Illum optio deleniti doloremque! Sunt eveniet vitae tempore reiciendis fuga maiores explicabo facilis nesciunt fugit quisquam rerum, aut commodi nobis assumenda possimus cum modi consectetur alias enim qui reprehenderit? Modi dolore quia provident magnam fugit, vero ducimus! Ea ratione excepturi dolore libero ut quo necessitatibus minus qui, beatae delectus a praesentium aut soluta dolores aliquid exercitationem ipsum repellat reiciendis modi neque magnam alias ipsam consequuntur provident. Fuga qui rem impedit sequi blanditiis voluptatibus architecto quo maiores. Qui est sit ea nihil quod dolor exercitationem totam quam eligendi quo! Odit sit iure laudantium eligendi provident ipsam beatae quo. Vel odio quae sunt saepe beatae deleniti numquam aspernatur, eos porro voluptatum. Ad, natus facere minima corrupti vero eum maxime cumque est quae ducimus molestias ut ipsam iste laudantium rerum consequatur sint, omnis quisquam ipsa? Necessitatibus veritatis minima voluptatibus culpa iure labore asperiores magnam aliquam aut, totam expedita. Sequi delectus quis qui earum, necessitatibus saepe sint alias debitis laboriosam vero vel rerum atque esse quas aperiam fugiat ea inventore quia vitae voluptatibus accusantium hic ab? Voluptatem itaque incidunt consectetur! Repellat, sunt dignissimos incidunt sint amet voluptatem, optio ullam eius consectetur nulla ratione.</p>
     </main>
 </body>
 </html>
