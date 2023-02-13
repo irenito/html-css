@@ -11,11 +11,12 @@
             background-size: 100% 100%; 
 
             position: relative; 
-            height: 96vh; 
+            height: 96vh; /* vai ocupar 96% da altura da minha viewport/tela */
             background-color: purple;
             padding: 10px; 
 
         }
+        /* para centralizar um bloco/caixa horizontalmente, usamos margin:auto; mas para centralizar verticalmente, usamos position relative e absolute. Para fazer a centralização vertical, temos que ter um elemento dentro do outro*/
 
         #conteudo{
             background-image: url(imagens/target001.png);
@@ -29,7 +30,7 @@
             left: 50%;
             top: 50%; 
 
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); /* numeros positivos direita e pra baixo, numeros negativo esquerda e pra cima*/
 
         }
     </style>
