@@ -1,3 +1,60 @@
 @charset "UTF-8";
 
+*{ /* configurações gerais*/
+    margin: 0px;
+    padding: 0px;
+}
 
+html, body{
+    min-height: 100vh; /* a altura minima do meu html e body ocupara 100% ou 100vh da minha tela */
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+} 
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* nessa as letras ficam todas maiusculas, porem tamanho grande e pequeno;  na text-transform: uppercase, todas as letras ficam maiusculas */;
+}
+header > p{
+    padding-bottom: 50px;
+
+}
+header a, footer a /* ou pode colocar somente a, sem header, sem footer*/ {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { /* ou nesse caso, pode colocar somente a:hover, pq nao terá outros links no site*/
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh; /* pra ganhar espaço na section, fazer a rolagem da tela para fazer o efeito parallax, vai ocupar 10% da altura da minha tela e, conforme aumenta e diminui a tela, ele se adapta*/
+    padding-bottom: 10vh;
+    line-height: 2em; /* altura , espaço entre uma linha e outra*/
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+section.imagem > p { /* coloquei um fundo/caixa no meu paragrafo, para que a imagem nao se misture com o texto */
+    background-color: rgba(0, 0, 0, 0.211);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
