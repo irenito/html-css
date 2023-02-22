@@ -56,18 +56,39 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw; /* a letra será 3.5% da largura da minha tela, aumentando ou diminuindo o tamanho da tela*/
 }
+
+section > p {
+    padding-bottom: 2em;
+
+}
 section.normal{
     background-color: white;
     color: black;
 }
+
 section.imagem{
     background-color: rgb(53, 52, 52);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px black; /* horizontal vertical espalhamento e ampliação */
+    background-attachment: fixed; /* fixar a imagem de fundo, a imagem não se movimenta com o texto */
 }
 section.imagem > p { /* coloquei um fundo/caixa no meu paragrafo, para que a imagem nao se misture com o texto, ao inves de colocar a width da caixa em 400px (pois deu problema, teve quebra de linha), coloquei display */
-    background-color: rgba(0, 0, 0, 0.211);
+    background-color: rgba(0, 0, 0, 0.397);
     display: inline-block; /*transformei em caixa inline-block, pq ela não quebra linha e a caixa é do tamanho do conteudo*/
     padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.696); /* sombras no texto da section imagem p dar uma destacada do fundo-  horizontal,vertical e espalhamento*/
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+} /* 2 pontinhos pq tive q voltar 2 pastas p encontrar a imagem : estou em style.css para pasta estilo e pasta imagens */
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    
+
 }
 
 footer{
