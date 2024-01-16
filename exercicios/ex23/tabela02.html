@@ -16,6 +16,13 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 2px;
+            background-color: lightgray;
+        }
+
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -35,6 +42,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
     Table
+        Caption é a legenda da tabela
         thead
             tr,td,th- linha,celula,cabeçalho
         tbody
@@ -44,9 +52,10 @@
         -->
 
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- escopo de coluna, os dados estão abaixo. Visualmente não muda nada, mas é importante para os mecanismos de busca -->
+                <th scope="col" style="width: 50px;">  População</th>
 
             </thead>
             <tbody>
@@ -96,13 +105,78 @@
                     <td>Goias</td>
                     <td>7 056 495</td>
                 </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>6 775 805</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>3 974 687</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>3 941 613</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td>3 833 712</td>
+
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td>3 658 649</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td>3 302 729</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td>3 272 199</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td>3 127 683</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td>2 817 381</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td>2 757 013</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td>2 209 558</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td>1 581 196</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td>1 511 460</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td>830 018</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td>733 759</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td>636 707</td>
+                </tr>
 
 
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th> 
-                    <td>677788888999</td>
+                    <th scope="row">Total de habitantes</th> <!-- escopo de linha, os dados estão na mesma linha--> 
+                    <td > <strong >677788888999</strong></td>
                 </tr>
 
             </tfoot>
