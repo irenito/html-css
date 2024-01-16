@@ -14,12 +14,13 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
             font-size: 1.5em;
             font-weight: bolder;
-            padding: 2px;
+            padding: 10px;
             background-color: lightgray;
         }
 
@@ -43,6 +44,16 @@
         tbody > tr:nth-child(even){ /*par ou 2n , 3n ... */
             background-color: yellow;
         }
+        thead > tr >th { /* para fixar o cabeçalho em tabelas grandes, a table fica position relative, aqui position sticky-colar, depois usar uma propriedade auxiliar do position ,o top, como não queremos mudar o lugar do nosso cabeçalho e sim apenas ativar o sticky, colocamos o valor 0, colando o cabeçalho na posição zero, melhor -1px , tem que colar o background tbm */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }  /*ou */
+        thead{
+            position:sticky;
+            top:-1px;
+        }
     </style>
 </head>
 <body>
@@ -61,8 +72,10 @@
         <table>
             <caption>População das Unidades Federativas</caption>
             <thead>
+                <tr>
                 <th scope="col">Estado</th> <!-- escopo de coluna, os dados estão abaixo. Visualmente não muda nada, mas é importante para os mecanismos de busca -->
                 <th scope="col" style="width: 50px;">  População</th>
+                </tr>
 
             </thead>
             <tbody>
@@ -188,5 +201,11 @@
 
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente estLorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente estLorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente est</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum soluta, optio alias fugiat cum quisquam odio consequuntur impedit quo iusto, voluptatem illum accusantium iure quod ab vel autem labore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente estLorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente est</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quisquam corrupti saepe temporibus nostrum, architecto veniam repudiandae nobis fugit vitae maiores facilis accusamus ducimus neque quasi quod sunt optio eius.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam sint veritatis necessitatibus illum fugit dolor nesciunt, velit vero itaque debitis quas impedit, reprehenderit in cum maxime adipisci obcaecati soluta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente estLorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente est</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ex, expedita commodi vitae maiores iure, vel error nostrum in unde odio inventore accusantium impedit. Nulla beatae amet omnis velit repudiandae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolorum blanditiis unde dolores debitis asperiores optio quaerat, culpa enim sed delectus quis molestiae tenetur pariatur maxime hic ipsa sapiente est</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius blanditiis necessitatibus officia facere consequuntur mollitia laborum accusamus vitae dolor minus commodi ipsam, nostrum, atque dignissimos excepturi eaque voluptatem corporis eligendi debitis, fugiat harum nulla id. Amet iure expedita, rem ab quam quia tempora iste ipsam possimus et deleniti ratione dolorum.</p>
 </body>
 </html>
