@@ -29,8 +29,8 @@
     </ul>
     
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In deserunt illo eius molestiae saepe numquam reiciendis, corporis libero, quidem sed quasi veniam quisquam aliquam, facilis itaque consequuntur rerum? Modi, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium culpa eligendi eaque maiores id obcaecati. Sunt atque, dolorem delectus iusto deleniti harum ut perspiciatis voluptatem, ab doloremque cupiditate explicabo est!</p>
-
-    <iframe name="frame" src="">
+    <!--substituir o parametro padrão do iframe src para srcdoc, assim podemos adicionar como valor do parametro especificações em html (h1,p,img...) e criar uma pagina inicial de forma estática no iframe interativo, sem precisar criar um arquivo separado. Como desvantagem, só podemos inserir um código basico em html, não dá pra fazer muita coisa. Se quiser algo mais elaborado, usar o parametro src, criar um arquivo separado e inserir o endereço nele.-->
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum alias ab iste cupiditate a tempore unde doloremque, eius fugiat quia tempora sed beatae dolorem quibusdam non voluptas consequatur asperiores.</p> <img src='imagens/cursoemvideo.png'>"
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
 
