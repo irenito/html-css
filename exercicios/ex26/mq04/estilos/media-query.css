@@ -12,12 +12,30 @@ Grandes telas: acima de 1200px */
 
 
 @media print { /*impressão*/
-    * {
+    *{
         font-family: 'Courier New', Courier, monospace;
+
     }
     body{
-        background-image: url(../imagens/back-print.jpg);
+        background-image: url(../imagens/back-print.jpg); /* desnecessário pq não imprime background*/
     }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+     
+    main h1{
+        text-shadow: none;
+        color: black;
+
+    }
+    main::after{
+        content: "Essa impressão foi feita através do site www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+        
+    }
+
     img#phone { display: none;}
     img#tablet { display: none; }
     img#print { display: block;}
