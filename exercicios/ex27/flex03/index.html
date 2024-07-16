@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empacotamento flex-wrap</title>
+    <style>
+        div.conteiner{
+            background-color: orange;
+
+            display: flex;
+            flex-flow: row-reverse wrap /* shorthand */
+           /* flex-direction: row-reverse; /* em caso de flex-direction:column, tem que colocar height e ir diminuindo para ver os resultados
+            flex-wrap: wrap; */
+
+        }
+        div.item{
+            background-color: darkgray;
+            border: 1px solid black;
+            text-align: center;
+            /* flex:auto faz com que o item ocupe todo a linha, nao sobrando espaço no elemento-pai ; só funciona nos filhos */
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A </div>
+        <div class="item">Exemplo de bloco B </div>
+        <div class="item">Exemplo de bloco C </div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E </div>
+        <div class="item">Exemplo de bloco F </div>
+
+    </div>
+</body>
+</html>
