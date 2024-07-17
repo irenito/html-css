@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizado</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: crimson;
+        }
+        main{
+            background-color: aqua;
+            height: 90vh;
+            width: 90vw;
+
+            display: flex;
+            flex-flow: row nowrap; /* padrão */
+            justify-content: center; /* alinho na linha do main-axis */
+            align-items: center; /* alinho na linha do cross-axis. Lembrando que, isso no flex-direction :row */
+
+        }
+        section{
+            background-color: darkgray; /* a minha section é do tamanho do main, então, coloca-se um height e width para o main */
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Tela de login</h1>
+        </section>
+    </main>
+</body>
+</html>
