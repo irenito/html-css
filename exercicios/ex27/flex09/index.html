@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box flex-basis</title>
+    <style>
+        div.conteiner{
+            background-color: brown;
+
+            display: flex;
+            flex-flow: row nowrap; /* faça o teste mudando pra wrap, quando diminuir havera a quebra*/
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 150px; /* por padrao é auto, o tamanho será a dos itens. Esse valor nunca é absoluto, pq se diminuir o conteiner pai, os itens tbm diminuirao, podendo ter q quebra ou não, dependendo do nowrap ou wrap*/
+
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!-- a div já é uma caixa block que ocupa toda a linha , os itens ficam um em cima do outro. Com display:flex e flex:auto,  os itens se adaptarão ao tamanho do conteiner pai.-->
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteudo maior ainda, vai ocupar mais espaço</div>
+    </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhando os itens</title>
+    <title>Alinhando os itens align-self</title>
 
     <style>
         div.conteiner{
@@ -11,7 +11,7 @@
 
             display: flex;
             flex-flow: row wrap;
-            align-items: flex-start;
+            align-items: flex-start; /* para que todos os itens fiquem grudados em cima, podendo configurar cada item individualmente*/
             height: 400px;
 
         }
@@ -33,7 +33,7 @@
             align-self: stretch;
         }
         div#i5 {
-           align-self: auto; /* a configuração auto, acompanha o align-item  no conteiner-pai */
+           align-self: auto; /* a configuração auto, acompanha o align-item ou align-content no conteiner-pai */
         }
     </style>
 </head>

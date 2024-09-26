@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner{
+            background-color: brown;
+
+            display: flex;
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto; /* faz com que os itens ocupem toda a linha */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!-- a div já é uma caixa block que ocupa toda a linha , os itens ficam um em cima do outro. Com display:flex e flex:auto,  os itens se adaptarão ao tamanho do conteiner pai.-->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
