@@ -3,10 +3,10 @@
 /*configuração para mobile */
 
 header, header > nav{
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; /* para o header e a nav ficarem empilhados*/
 }
 header > h1 {
-    flex-basis: 50px;
+    flex-basis: 50px; /* eixo principal, alterar a altura do h1*/
 }
 header > nav > a{
     width: 90vw;
