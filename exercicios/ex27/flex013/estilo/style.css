@@ -14,28 +14,28 @@ body{
     width: 100vw;
 }
 
-header{
+header{ /* meu header é o conteiner pai com 2 itens: o h1 e o nav*/
     background-color: gray;
     padding: 10px;
     color: white;
 
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-flow: row wrap; /* em linha, com quebra*/
+    justify-content: space-between; /*grudado no main start e no main end, espaçamento entre eles é igual*/
+    align-items: center; /*os itens ficarão no meio do cross axis*/
 
 }
 header > h1{
     /*border: 1px dotted black;*/
 
-    flex: 0 0 200px;
+    flex: 0 0 200px; /* item não flexivel, nao cresce, nao diminui */
 }
-header > nav {
+header > nav { /* é conteiner pai com 1 item: os links*/
    /* border: 1px dotted black;*/
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-end; /* os itens ficam grudados no main end*/
 }
 header > nav > a {
     background-color: black;
