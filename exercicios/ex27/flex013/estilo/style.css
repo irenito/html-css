@@ -26,12 +26,12 @@ header{ /* meu header é o conteiner pai com 2 itens: o h1 e o nav*/
 
 }
 header > h1{
-    /*border: 1px dotted black;*/
+    /*border: 1px dotted black; serve para visualizar os conteiners */
 
     flex: 0 0 200px; /* item não flexivel, nao cresce, nao diminui */
 }
 header > nav { /* é conteiner pai com 1 item: os links*/
-   /* border: 1px dotted black;*/
+   /* border: 1px dotted black; para visualizar melhor os conteiners */
 
     display: flex;
     flex-flow: row wrap;
