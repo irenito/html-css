@@ -29,8 +29,16 @@ section.flex-content{
 }
 article.media-text{
     display: flex;
-    flex
+    flex-flow:row wrap-reverse ;
 }
 article.text-media{
     display: flex;
+    flex-flow: row wrap;
+}
+article > div.text{
+    flex:1 1 400px;
+
+    }
+article > div.media{
+    fl:ex
 }
