@@ -23,4 +23,14 @@ header, section.normal{
 section.flex-content{
     padding: 20px;
     background-color: rgba(0, 255, 81, 0.292);
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+article.media-text{
+    display: flex;
+    flex
+}
+article.text-media{
+    display: flex;
 }
