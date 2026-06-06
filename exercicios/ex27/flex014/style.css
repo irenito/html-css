@@ -27,6 +27,9 @@ section.flex-content{
     display: flex;
     flex-flow: column nowrap;
 }
+section > article {
+    border: 2px dashed black; /* para visualizar*/
+}
 article.media-text{
     display: flex;
     flex-flow:row wrap-reverse ;
@@ -34,11 +37,30 @@ article.media-text{
 article.text-media{
     display: flex;
     flex-flow: row wrap;
+
+    padding-top: 10px;
 }
 article > div.text{
     flex:1 1 400px;
 
+    border: 2px dashed blue; /* para visualizar*/
+
     }
 article > div.media{
-    fl:ex
+    flex: 1 0 400px;
+
+    border: 2px dashed red; /*para visualizar*/
+}
+div.media > img{
+    width: 400px;
+    padding-bottom: 10px;
+
+    display: block;
+    margin: auto;
+}
+div.media > video {
+    display: block;
+    margin: auto;
+
+    width: 87%;
 }
