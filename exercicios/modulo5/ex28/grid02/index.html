@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid layout na prática 1</title>
+    <title>Grid layout na prática 3</title>
 
     <style>
         div.container{
@@ -11,14 +11,13 @@
             height: 250px;
 
             display: grid;
-            grid-template-columns: auto auto auto; /*3 colunas*/
-            grid-template-rows: auto auto auto; /*3 linhas*/
+           
+            grid-template: repeat(3,auto) / repeat(3,auto); /* grid-template-rows / grid-template-columns*/
             gap:5px; /*espaço entre os itens*/
-
-            align-items: normal; /* é o padrão, strech= normal. Serve para align-items, justify-items, align-content, justify-content */
-            justify-items: normal;
-            align-content:  normal;
-            justify-content: normal ;
+        
+            place-items: start center; /* align-items dps justify-items*/
+            place-content: space-between end; /* align-content dps justify-content*/
+            
 
         }
 
