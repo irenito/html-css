@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* control + click,na parte branca, ative o inspecionar para visualizar o grid */
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(4,1fr);
+}
+.caixa1 {
+    background-color: red;
+    grid-row-start:-4 ;
+    grid-row-end: -3; /* ou 2, pode colocar numeros positivos ou negativos*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.caixa2 {
+    background-color: aqua;
+    grid-row-start:2 ;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.caixa3 {
+    background-color: blue;
+    grid-row-start:2;
+    grid-row-end:-1;
+    grid-column-start:3;
+    grid-column-end:-1; /* ou 5*/
+}
