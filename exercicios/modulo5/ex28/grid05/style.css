@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+        .container{
+            border: 2px solid red;
+            height: 300px;
+
+            display: grid;
+            grid-template-rows: 100px 100px 100px ;
+            grid-template-columns: repeat(4,100px);
+            
+        }
+        .itemA {
+            background-color: blue;
+            grid-row-start: 1 ;
+            grid-row-end: -1;
+            grid-column-start: 1;
+            grid-column-end: -3;
+        }
+
+        .itemB {
+            background-color: yellowgreen;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        } 
+        
+        .itemC {
+            background-color: brown;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+    
