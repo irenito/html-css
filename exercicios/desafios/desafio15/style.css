@@ -3,6 +3,42 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
+    box-sizing: border-box; /* a borda fazer parte do elemento*/
 }
 
+.container {
+    display: grid;
+
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px; /* para funcionar o fr tem que ter width e height ; ou pode por auto */
+    gap: 2px;
+    
+    width: 100vw;
+    height: 100vh; /* para q o site ocupe 100% da tela, seja responsivo, para isso vejo no meu site o que é mais flexivel, no caso , a parte principal, então, ao inves de valor fixo, mudo pra fraction */
+
+}
+.caixa {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+#topo {
+    grid-area: 1 / 1 / 2 / -1 ;
+}
+
+#menu {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+#principal {
+ grid-area: 3 / 1 / 4 / 2;
+}
+
+#secundario {
+    grid-area: 3 / 2 / 4 / -1 ;
+}
+
+#rodape {
+     grid-area: 4 / 1 / 5 / -1;
+}
